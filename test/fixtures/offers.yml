@@ -2,14 +2,12 @@
 
 one:
   offer_price: 9.99
-  accepted_items: false
+  accepted_listing: false
   message: MyString
-  belongs_to: 
-  belongs_to: 
+  user: one
 
 two:
   offer_price: 9.99
-  accepted_items: false
+  accepted_listing: false
   message: MyString
-  belongs_to: 
-  belongs_to: 
+  user: two

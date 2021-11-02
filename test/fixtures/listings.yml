@@ -3,13 +3,13 @@
 one:
   name: MyString
   image_url: MyString
-  suggested_price: 
+  suggest_price: 9.99
   category: MyString
-  belongs_to: 
+  user: one
 
 two:
   name: MyString
   image_url: MyString
-  suggested_price: 
+  suggest_price: 9.99
   category: MyString
-  belongs_to: 
+  user: two

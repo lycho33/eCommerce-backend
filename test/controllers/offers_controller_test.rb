@@ -12,7 +12,7 @@ class OffersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create offer" do
     assert_difference('Offer.count') do
-      post offers_url, params: { offer: { accepted_items: @offer.accepted_items, belongs_to: @offer.belongs_to, message: @offer.message, offer_price: @offer.offer_price } }, as: :json
+      post offers_url, params: { offer: { accepted_listing: @offer.accepted_listing, message: @offer.message, offer_price: @offer.offer_price, user_id: @offer.user_id } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class OffersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update offer" do
-    patch offer_url(@offer), params: { offer: { accepted_items: @offer.accepted_items, belongs_to: @offer.belongs_to, message: @offer.message, offer_price: @offer.offer_price } }, as: :json
+    patch offer_url(@offer), params: { offer: { accepted_listing: @offer.accepted_listing, message: @offer.message, offer_price: @offer.offer_price, user_id: @offer.user_id } }, as: :json
     assert_response 200
   end
 
