@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image_url: MyString
+  suggested_price: 
+  category: MyString
+  belongs_to: 
+
+two:
+  name: MyString
+  image_url: MyString
+  suggested_price: 
+  category: MyString
+  belongs_to: 
