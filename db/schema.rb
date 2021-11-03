@@ -10,42 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_02_223549) do
+ActiveRecord::Schema.define(version: 2021_11_03_223704) do
 
-  create_table "listings", force: :cascade do |t|
+  create_table "carts", force: :cascade do |t|
+    t.decimal "total"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "products", force: :cascade do |t|
     t.string "name"
-    t.string "image_url"
-    t.decimal "suggest_price"
+    t.decimal "price"
     t.string "category"
-    t.integer "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_listings_on_user_id"
-  end
-
-  create_table "offers", force: :cascade do |t|
-    t.decimal "offer_price"
-    t.boolean "accepted_listing"
-    t.string "message"
-    t.integer "user_id", null: false
-    t.integer "listing_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["listing_id"], name: "index_offers_on_listing_id"
-    t.index ["user_id"], name: "index_offers_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "password_digest"
+    t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "listings", "users"
-  add_foreign_key "offers", "listings"
-  add_foreign_key "offers", "users"
+  create_table "purchase_carts", force: :cascade do |t|
+    t.integer "quantity"
+    t.integer "product_id", null: false
+    t.integer "cart_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cart_id"], name: "index_purchase_carts_on_cart_id"
+    t.index ["product_id"], name: "index_purchase_carts_on_product_id"
+  end
+
+  add_foreign_key "purchase_carts", "carts"
+  add_foreign_key "purchase_carts", "products"
 end

@@ -2,14 +2,12 @@
 
 one:
   name: MyString
-  image_url: MyString
-  suggest_price: 9.99
+  price: 9.99
   category: MyString
-  user: one
+  quantity: 1
 
 two:
   name: MyString
-  image_url: MyString
-  suggest_price: 9.99
+  price: 9.99
   category: MyString
-  user: two
+  quantity: 1
