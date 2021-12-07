@@ -85,3 +85,7 @@ Product.create(
     category: "sweatshirt",
     quantity: 31,
 )
+
+Cart.create(
+    total: ""
+)
