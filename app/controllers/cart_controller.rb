@@ -1,4 +1,4 @@
-class CartsController < ApplicationController
+class CartController < ApplicationController
   before_action :set_cart, only: [:show, :update, :destroy]
 
   # GET /carts
