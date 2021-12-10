@@ -15,10 +15,13 @@ class PurchaseCartsController < ApplicationController
 
   # POST /purchase_carts
   def create
-    @purchase_cart = PurchaseCart.new(purchase_cart_params)
+
+    @cart = Cart.find_by_id(params[:cart_id])
+    # @product = Product.find_by_id(params[:product_id])
+    @purchase_cart = @cart.purchase_carts.build(purchase_cart_params)
 
     if @purchase_cart.save
-      render json: @purchase_cart, status: :created, location: @purchase_cart
+      render json: @purchase_cart, status: :created
     else
       render json: @purchase_cart.errors, status: :unprocessable_entity
     end
