@@ -87,5 +87,5 @@ Product.create(
 )
 
 Cart.create(
-    total: ""
+    category: "clothes"
 )

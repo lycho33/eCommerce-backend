@@ -15,11 +15,10 @@ class PurchaseCartsController < ApplicationController
 
   # POST /purchase_carts
   def create
-
     @cart = Cart.find_by_id(params[:cart_id])
     # @product = Product.find_by_id(params[:product_id])
-    @purchase_cart = @cart.purchase_carts.build(purchase_cart_params)
-
+    @purchase_cart = @cart.purchase_carts.create(purchase_cart_params)
+    # byebug
     if @purchase_cart.save
       render json: @purchase_cart, status: :created
     else

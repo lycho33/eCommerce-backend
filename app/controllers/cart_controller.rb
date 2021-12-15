@@ -3,21 +3,21 @@ class CartController < ApplicationController
 
   # GET /carts
   def index
-    @carts = Cart.all
+    @cart = Cart.all
 
-    render json: @carts
+    render json: @cart, include: :purchase_cart
   end
 
   # GET /carts/1
   def show
-    render json: @cart
+    render json: @cart, include: :purchase_cart
   end
 
   # POST /carts
   def create 
     @cart = Cart.new(cart_params)
     if @cart.save
-      render json: @cart, status: :created, location: @cart
+      render json: @cart, status: :created
     else
       render json: @cart.errors, status: :unprocessable_entity
     end
@@ -45,6 +45,6 @@ class CartController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cart_params
-      params.require(:cart).permit(:quantity, :toal)
+      params.require(:cart).permit(:category)
     end
 end
