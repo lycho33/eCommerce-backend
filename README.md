@@ -1,24 +1,19 @@
-# README
+# Mini-Store Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the basic backend for React. 
 
-Things you may want to cover:
+If you are following along and want to install this backend, feel free to fork and clone this repo. 
 
-* Ruby version
+##Usage
 
-* System dependencies
+After installing this repo run
 
-* Configuration
+    $ bundle install
+    $ rails db:migrate
+    $ rails db:seed
 
-* Database creation
+This should set up your database and allow you to start your server on port 4000.
 
-* Database initialization
+    $ rails server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then visit your port of 4000

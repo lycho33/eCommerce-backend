@@ -4,7 +4,6 @@ class CartController < ApplicationController
   # GET /carts
   def index
     @cart = Cart.all
-
     render json: @cart, include: :purchase_cart
   end
 
