@@ -40,7 +40,7 @@ Product.create(
 
 Product.create(
     name: "Wave Bucket",
-    image_url: "https://cdn.shopify.com/s/files/1/0073/9580/3195/products/WaveBucketHatBlack1.jpg?v=1539742005",
+    image_url: "https://image-cdn.hypb.st/https%3A%2F%2Fbae.hypebeast.com%2Ffiles%2F2020%2F10%2Fbest-bucket-hats-2020-fall-winter-2.jpg?w=1600&cbr=1&q=90&fit=max",
     price: 14.90,
     category: "hat",
     quantity: 20,
@@ -86,6 +86,142 @@ Product.create(
     quantity: 31,
 )
 
+Product.create(
+    name: "Velvety Velvet",
+    image_url: "https://clickhole.com/wp-content/uploads/2020/09/iStock-885959956-scaled.jpg",
+    price: "15.99",
+    category: "gloves",
+    quantity: 20
+)
+
+Product.create(
+    name: "Embroidery Stussy",
+    image_url: "https://cdn.shopify.com/s/files/1/0087/6193/3920/products/118472_ASHH_2_300x300.jpg?v=1646250816",
+    price: "45.99",
+    category: "hoodie",
+    quantity: 20
+)
+
+Product.create(
+    name: "Spread the Cream",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrwzNliJ0w33QAKzTO8bXbTuZ2LvEBfXRjA&usqp=CAU",
+    price: "$47.99",
+    category: "hoodie",
+    quantity: 20
+)
+
+Product.create(
+    name: "Satin Silk",
+    image_url: "https://shop.freywille.com/media/catalog/product/cache/39/image/850x850/9df78eab33525d08d6e5fb8d27136e95/s/i/silk_scarf_satin_gustav_klimt_freywille__0_1527604158172.jpg",
+    price: "39.99",
+    category: "scarf",
+    quantity: 20
+)
+
+Product.create(
+    name: "Tracksuit in Suede",
+    image_url: "https://www.tods.com/fashion/tods/X1M11432960TYOB999/X1M11432960TYOB999-30.jpg?imwidth=865",
+    price: "120.00",
+    category: "jacket",
+    quantity: 20
+)
+
+Product.create(
+    name: "Step on Comfort",
+    image_url: "https://m.media-amazon.com/images/I/41tCvDkzVML.jpg",
+    price: "79.99",
+    category: "shoes",
+    quantity: 20
+)
+
+Product.create(
+    name: "Just So",
+    image_url: "https://m.media-amazon.com/images/I/51NBXCzEixL._AC._SR360,460.jpg",
+    price: "69.99",
+    category: "shoes",
+    quantity: 20
+)
+
+Product.create(
+    name: "Poodle Panda",
+    image_url: "https://gifts.worldwildlife.org/gift-center/Images/apparel-and-more/pullover-sweatshirt-unisex/detail_main.jpg",
+    price: "$34.99",
+    category: "sweatshirt",
+    quantity: 20
+)
+
+Product.create(
+    name: "Challenge the Sweats",
+    image_url: "https://cdn.shopify.com/s/files/1/0088/6675/8707/products/MTV-TC-LOGO-ViacomCBS-MTV-UnisexHoodie-Printful-Black-Image01_600x.png?v=1638196666",
+    price: "42.15",
+    category: "sweatshirt",
+    quantity: 20
+)
+
+Product.create(
+    name: "Luxury Trousers",
+    image_url: "https://us.louisvuitton.com/images/is/image/FMKP10LN5036_PM2_Front%20view",
+    price: "54.99",
+    category: "pants",
+    quantity: 20
+)
+
+Product.create(
+    name: "Spring is Here",
+    image_url: "https://assets.vogue.com/photos/6078b27532c4e664efceec3c/1:1/w_1013,h_1013,c_limit/slide_6.jpg",
+    price: "39.99",
+    category: "pants",
+    quantity: 20
+)
+
+Product.create(
+    name: "Knitty Kint",
+    image_url: "https://volkssport.az/1269-large_default/reebok-wor-knit-pant-gj0840.jpg",
+    price: "34.99",
+    category: "pants",
+    quantity: 20
+)
+
+Product.create(
+    name: "Matcha Match",
+    image_url: "https://m.media-amazon.com/images/I/61z8EVo52YL._AC_SL1500_.jpg",
+    price: "39.99",
+    category: "hoodie",
+    quantity: 20
+)
+
+Product.create(
+    name: "Neutral Emerald",
+    image_url: "http://cdn.shopify.com/s/files/1/1081/9866/products/Lander_Jacket_Nuetron_Product_Photo_b4462270-68f0-4651-a6b0-c1c20a90156b_1200x1200.png?v=1635461276",
+    price: "79.99",
+    category: "jacket",
+    quantity: 20
+)
+
+Product.create(
+    name: "Summer Slick",
+    image_url: "https://img01.ztat.net/article/spp-media-p1/de4f2a40ee7840999a07441a6b673277/5f6623b3a1764c5db5ae0977f78f3360.jpg?imwidth=1800&filter=packshot",
+    price: "52.15",
+    category: "jacket",
+    quantity: 20
+)
+
+Product.create(
+    name: "Cap On",
+    image_url: "https://cdn11.bigcommerce.com/s-hsi95a83fz/product_images/uploaded_images/1118-grade-hat-black-thumb.jpg?t=1585690423&_ga=2.25919934.2069277356.1585516345-1869486607.1578452111",
+    price: "14.99",
+    category: "hat",
+    quantity: 20
+)
+
+Product.create(
+    name: "Sustain the Fabric",
+    image_url: "https://images.squarespace-cdn.com/content/v1/61dcd32b3fb8bb4b5af9b560/1641938564175-FKJMMIHO8LE3KV9239FH/image-asset.jpeg",
+    price: "34.99",
+    category: "shoes",
+    quantity: 20
+)
+
 Cart.create(
-    category: "clothes"
+    category: ''
 )
